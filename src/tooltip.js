@@ -529,7 +529,7 @@ class Tooltip extends Component {
 
     if (wrapInTouchable) {
       return (
-        <TouchableWithoutFeedback onPress={onChildPress} onLongPress={onChildLongPress}>
+        <TouchableWithoutFeedback accessible={false} onPress={onChildPress} onLongPress={onChildLongPress}>
           {childElement}
         </TouchableWithoutFeedback>
       );
